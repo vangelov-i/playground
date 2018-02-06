@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ride4Ride</title>
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        #map {
+            height: 100%;
+        }
+
+        #mapRoute {
+            height: 100%;
+        }
+
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #floating-panel {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: 'Roboto', 'sans-serif';
+            line-height: 30px;
+            padding-left: 10px;
+        }
+    </style>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG3gcPjRgTeWlYW6ydQcjhzjb6J_YgwY0&libraries=geometry">
+    </script>
+    <script type="text/javascript" src="./my-map.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG3gcPjRgTeWlYW6ydQcjhzjb6J_YgwY0&callback=initializeMap" -->
+    async defer></script>
+    <!-- <script type="text/javascript" src="./map-helpers.js"></script> -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=geometry"></script> -->
+</head>
+
+<body>
+    <div id="floating-panel">
+        <b>Start: </b>
+        <input id="start" type="text" value="unss" />
+        <b>End: </b>
+        <input id="end" type="text" value="accedia" />
+        <button id="btn-display">Display route</button>
+    </div>
+    <div id="map"></div>
+    <!-- <div id="map"></div> -->
+    <!-- <div id="control"></div>
+    <div id="mapRoute"></div> -->
+</body>
+
+</html>
